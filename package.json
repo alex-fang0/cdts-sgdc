@@ -3,6 +3,9 @@
   "version": "4.0.45",
   "private": true,
   "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "lint": "next lint",
     "translate": "grunt --stack i18n-ejs --cdts_samples_cdnenv=localhost",
     "build": "grunt --stack build --cdts_samples_cdnenv=localhost",
     "build-prod": "grunt --stack build-prod",
@@ -13,7 +16,15 @@
   },
   "author": "ESDC-EDSC",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "date-fns": "^2.27.0",
+    "gray-matter": "^4.0.3",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "remark": "^12.0.0",
+    "remark-html": "^12.0.0"
+  },
   "devDependencies": {
     "@wdio/cli": "^7.16.10",
     "@wdio/dot-reporter": "^7.16.6",
@@ -25,8 +36,8 @@
     "axe-core": "^4.3.5",
     "axios": "^0.24.0",
     "ejs": "^3.1.6",
-    "ejs-lint": "^1.2.1",
-    "eslint": "^8.4.0",
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7",
     "global-agent": "^3.0.0",
     "grunt": "^1.4.1",
     "grunt-cli": "^1.4.3",
