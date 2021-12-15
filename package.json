@@ -5,14 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "lint": "next lint",
-    "translate": "grunt --stack i18n-ejs --cdts_samples_cdnenv=localhost",
-    "build": "grunt --stack build --cdts_samples_cdnenv=localhost",
-    "build-prod": "grunt --stack build-prod",
-    "build-nowet": "grunt --stack build-nowet --cdts_samples_cdnenv=localhost",
-    "serve": "grunt --stack serve --cdts_samples_cdnenv=localhost",
-    "serve-nobuild": "grunt --stack serve-nobuild --cdts_samples_cdnenv=localhost",
-    "test": "grunt --stack test --cdts_samples_cdnenv=localhost"
+    "build": "next build",
+    "lint": "next lint"
   },
   "author": "ESDC-EDSC",
   "license": "MIT",
